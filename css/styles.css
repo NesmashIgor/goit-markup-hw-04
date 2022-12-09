@@ -1,0 +1,384 @@
+:root 
+{
+    --color-text-primary: #212121;
+    --color-text-secondary: #757575;
+    --color-background-primary: #F5F5F5;
+    --color-background-secondary: #2F303A;
+    --color-action: #2196F3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-text-primary);
+    font-family: "Roboto", sans-serif;
+
+    width: auto;
+}
+
+ul, h1, h2, h3, p {
+    padding-left: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    text-decoration:none;
+}
+
+.list {
+    list-style: none;
+}
+
+.section {
+    padding: 94px 0;
+}
+
+/* Стилі до елементів хедеру */
+
+.header-background {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-logo-container {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
+
+.logoheader-web {
+    color: #2196F3;
+    font-size: 26px;
+    line-height: 1.173;
+    font-family: Raleway;
+    letter-spacing: 0.03em;
+}
+
+.logoheader-studio 
+{
+    color: #000000;
+    font-size: 26px;
+    line-height: 1.173;
+    font-family: Raleway;
+    letter-spacing: 0.03em;
+}
+
+.header-list-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-left: 354px;
+}
+
+.header-list {
+    color: var(--color-text-primary);
+    font-size: 14px;
+    line-height: 1.172;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.header-list:hover {
+    color: var(--color-action);
+}
+
+.header-list:focus {
+    color: var(--color-action);
+}
+
+.header-contact {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    line-height: 1.172;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.header-contact:hover {
+    color: var(--color-action);
+}
+
+.header-contact:focus {
+    color: var(--color-action);
+}
+
+/* Стилі до елементів мейн */
+
+.hero-section {
+    background-color: var(--color-background-secondary);
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+}
+
+.hero-title {
+    color: #FFFFFF;
+    font-size: 44px;
+    line-height: 1.363;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    color: #FFFFFF;
+    background-color: #2196F3;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    font-family: inherit;
+    cursor: pointer;
+
+    width: 200px;
+    height: 50px;
+
+    margin: auto;
+    display: block;
+}
+
+.main-section {
+    padding-top: 94px;
+}
+
+.text-main {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    line-height: 1.714;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+.list-maim-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.list-maim {
+    color: var(--color-text-primary);
+    font-size: 14px;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.title-main {
+    color: var(--color-text-primary);
+    font-size: 36px;
+    line-height: 1.171;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.image-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;  
+}
+
+.team-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.team-card {
+    border: 0 solid rgba(255, 255, 255, 1);
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.team-card-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-section {
+    background-color: #F5F4FA;
+    padding: 94px 0;
+}
+
+.title-team {
+    font-size: 16px;
+    line-height: 1.171;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 10px;
+}
+
+.text-team {
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    line-height: 1.171;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+/* Кнопки фільтру в портфоліо */
+
+.porfolio-filter-container {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 8px;
+
+    margin-bottom: 50px;
+}
+
+.porfolio-filter {
+    color: var(--color-text-primary);
+    background-color: #F5F4FA;
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    font-family: inherit;
+    cursor: pointer;
+    
+    border-radius: 4px;
+    border: #F5F4FA;
+    padding: 6px 22px;
+}
+
+.porfolio-filter:hover {
+    color: #FFFFFF;
+    background-color: var(--color-action);
+}
+
+.porfolio-filter:focus {
+    color: #FFFFFF;
+    background-color: var(--color-action);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-item {
+    border: 1px solid #EEEEEE;
+    width: 370px;
+    height: 404px;
+}
+
+.portfolio-text-container {
+    padding: 20px 24px;
+}
+
+.title-portfolio {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin: 0;
+}
+
+.text-portfolio {
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+
+/* Стилі до елементів футеру */
+
+.footer {
+    background-color: var(--color-background-secondary);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo-container {
+    margin-bottom: 28px;
+}
+
+.logofooter-web {
+        color: #2196F3;
+        font-family: Raleway;
+        font-size: 26px;
+        line-height: 1.173;
+        letter-spacing: 0.03em;
+}
+
+.logofooter-studio {
+    color: #FFFFFF;
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.173;
+    letter-spacing: 0.03em;
+}
+
+/* .footer-address-container {
+} */
+
+.footer-address{
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.714;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.footer-contact {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.714;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.footer-list {
+    margin-bottom: 12px;
+}
