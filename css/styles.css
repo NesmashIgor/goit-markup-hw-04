@@ -5,6 +5,7 @@
     --color-background-primary: #F5F5F5;
     --color-background-secondary: #2F303A;
     --color-action: #2196F3;
+    --color-icon-main: #FFFFFF;
 }
 
 * {
@@ -54,6 +55,7 @@ ul, h1, h2, h3, p {
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
+    align-items: center;
 }
 
 .logoheader-web {
@@ -77,6 +79,7 @@ ul, h1, h2, h3, p {
     display: flex;
     width: 1200px;
     margin: 0 auto;
+    height: 80px;
 }
 
 .nav-container {
@@ -98,7 +101,8 @@ ul, h1, h2, h3, p {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    margin-left: 354px;
+    margin-left: 318px;
+    height: 80px;
 }
 
 .header-list {
@@ -124,7 +128,9 @@ ul, h1, h2, h3, p {
     line-height: 1.172;
     font-weight: 500;
     letter-spacing: 0.02em;
+    display: flex;
     text-decoration: none;
+    align-items: center;
 }
 
 .header-contact:hover {
@@ -135,15 +141,27 @@ ul, h1, h2, h3, p {
     color: var(--color-action);
 }
 
+.mail-icon {
+    display: inline-flex;
+    width: 16px;
+    height: 12px;
+}
+
 /* Стилі до елементів мейн */
 
 .hero-section {
-    background-color: var(--color-background-secondary);
+    max-width: 1600px;
     height: 600px;
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
 
+    background-image: linear-gradient(
+    to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)
+    ), url(../image/hero-title-back.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -161,17 +179,18 @@ ul, h1, h2, h3, p {
 
 .hero-button {
     color: #FFFFFF;
-    background-color: #2196F3;
+    background-color: var(--color-action);
     font-size: 16px;
     line-height: 1.875;
     font-weight: 700;
     letter-spacing: 0.06em;
     font-family: inherit;
     cursor: pointer;
+    border-radius: 4px;
+    border: var(--color-action);
 
     width: 200px;
     height: 50px;
-
     margin: auto;
     display: block;
 }
@@ -221,6 +240,8 @@ ul, h1, h2, h3, p {
     gap: 30px;  
 }
 
+/* Наша команда */
+
 .team-section-container {
     display: flex;
     align-items: center;
@@ -232,6 +253,9 @@ ul, h1, h2, h3, p {
     border: 0 solid rgba(255, 255, 255, 1);
     background-color: #FFFFFF;
     text-align: center;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-container {
@@ -261,6 +285,30 @@ ul, h1, h2, h3, p {
     letter-spacing: 0.03em;
 }
 
+/* Наші клієнти */
+
+.client-container {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+}
+
+.client-icon {
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-icon:hover {
+    fill: var(--color-action);
+    border: 1px solid var(--color-action);
+}
+
+.client-icon:focus {
+    fill: var(--color-action);
+    border: 1px solid var(--color-action);
+}
+
 /* Кнопки фільтру в портфоліо */
 
 .porfolio-filter-container {
@@ -288,6 +336,17 @@ ul, h1, h2, h3, p {
 }
 
 .porfolio-filter:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.porfolio-filter:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+
+.porfolio-filter:hover {
     color: #FFFFFF;
     background-color: var(--color-action);
 }
@@ -303,10 +362,15 @@ ul, h1, h2, h3, p {
     gap: 30px;
 }
 
+
 .portfolio-item {
     border: 1px solid #EEEEEE;
     width: 370px;
     height: 404px;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-text-container {
@@ -356,8 +420,9 @@ ul, h1, h2, h3, p {
     letter-spacing: 0.03em;
 }
 
-/* .footer-address-container {
-} */
+.footer-address-container {
+    display: flex;
+}
 
 .footer-address{
     color: #FFFFFF;
@@ -381,4 +446,47 @@ ul, h1, h2, h3, p {
 
 .footer-list {
     margin-bottom: 12px;
+}
+
+.social-container {
+    margin-left: 70px;
+}
+
+.social-title {
+    color: #FFFFFF;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.social-icon {
+    fill: #FFFFFF;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-items{ 
+    width: 44px;
+    height: 44px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-link:hover {
+    background-color: var(--color-action);
+}
+
+.social-link:focus {
+    background-color: var(--color-action);
 }
