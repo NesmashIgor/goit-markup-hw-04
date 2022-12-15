@@ -116,10 +116,12 @@ ul, h1, h2, h3, p {
 
 .header-list:hover {
     color: var(--color-action);
+    fill: var(--color-action);
 }
 
 .header-list:focus {
     color: var(--color-action);
+    fill: var(--color-action);
 }
 
 .header-contact {
@@ -131,20 +133,22 @@ ul, h1, h2, h3, p {
     display: flex;
     text-decoration: none;
     align-items: center;
+    height: 80px;
 }
 
 .header-contact:hover {
     color: var(--color-action);
+    fill: currentColor;
 }
 
 .header-contact:focus {
     color: var(--color-action);
+    fill: currentColor;
 }
 
-.mail-icon {
-    display: inline-flex;
-    width: 16px;
-    height: 12px;
+.header-icon {
+    cursor: pointer;
+    margin-right: 10px;
 }
 
 /* Стилі до елементів мейн */
@@ -207,19 +211,18 @@ ul, h1, h2, h3, p {
     letter-spacing: 0.03em;
 }
 
-.list-maim-container {
+.list-main-container {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
 
-.list-maim {
+.list-main {
     color: var(--color-text-primary);
     font-size: 14px;
     line-height: 1.172;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     margin-bottom: 10px;
 }
 
@@ -240,6 +243,16 @@ ul, h1, h2, h3, p {
     gap: 30px;  
 }
 
+.icon-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
 /* Наша команда */
 
 .team-section-container {
@@ -255,7 +268,7 @@ ul, h1, h2, h3, p {
     text-align: center;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-container {
@@ -273,7 +286,6 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.171;
     font-weight: 500;
     letter-spacing: 0.03em;
-
     margin-bottom: 10px;
 }
 
@@ -285,6 +297,46 @@ border-radius: 0px 0px 4px 4px;
     letter-spacing: 0.03em;
 }
 
+.team-social {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+
+    padding-top: 16px;
+}
+
+.social-items-team { 
+    width: 44px;
+    height: 44px;
+}
+
+.social-icon-team {
+    fill: currentColor;
+}
+
+.social-link-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: #AFB1B8;
+}
+
+.social-link-team:hover {
+    background-color: var(--color-action);
+    color: #FFFFFF;
+}
+
+.social-link-team:focus {
+    background-color: var(--color-action);
+    outline-style: none;
+    fill: #FFFFFF;
+}
+
 /* Наші клієнти */
 
 .client-container {
@@ -294,7 +346,12 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .client-icon {
-    fill: #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 170px;
+    height: 92px;
+    fill:  #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
@@ -307,6 +364,7 @@ border-radius: 0px 0px 4px 4px;
 .client-icon:focus {
     fill: var(--color-action);
     border: 1px solid var(--color-action);
+    outline-style: none;
 }
 
 /* Кнопки фільтру в портфоліо */
@@ -336,24 +394,18 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .porfolio-filter:hover {
+    color: #FFFFFF;
+    background-color: var(--color-action);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
 .porfolio-filter:focus {
+    color: #FFFFFF;
+    background-color: var(--color-action);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-}
-
-
-.porfolio-filter:hover {
-    color: #FFFFFF;
-    background-color: var(--color-action);
-}
-
-.porfolio-filter:focus {
-    color: #FFFFFF;
-    background-color: var(--color-action);
+    outline-style: none
 }
 
 .portfolio-list {
@@ -489,4 +541,5 @@ border-radius: 0px 0px 4px 4px;
 
 .social-link:focus {
     background-color: var(--color-action);
+    outline-style: none
 }
