@@ -147,6 +147,7 @@ ul, h1, h2, h3, p {
 }
 
 .header-icon {
+    fill: currentColor;
     cursor: pointer;
     margin-right: 10px;
 }
@@ -334,7 +335,7 @@ ul, h1, h2, h3, p {
 .social-link-team:focus {
     background-color: var(--color-action);
     outline-style: none;
-    fill: #FFFFFF;
+    color: #FFFFFF;
 }
 
 /* Наші клієнти */
@@ -508,6 +509,10 @@ ul, h1, h2, h3, p {
     color: #FFFFFF;
     padding-bottom: 20px;
     text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.172;
+    font-weight: 700;
+    letter-spacing: 0.03em;
 }
 
 .social-icon {
